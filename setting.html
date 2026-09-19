@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setting - 운동기록기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="setting.css">
+  <script src="setting.js" defer></script>
+</head>
+<body>
+  <main class="settings-page">
+    <header class="settings-topbar">
+      <a class="brand" href="index.html" aria-label="운동기록기 홈">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span>운동기록기</span>
+      </a>
+      <a class="back-link" href="index.html"><span aria-hidden="true">←</span> 돌아가기</a>
+    </header>
+
+    <section class="settings-card" aria-labelledby="settings-title">
+      <p class="eyebrow">WORKOUT PREFERENCES</p>
+      <h3 id="settings-title">setting</h3>
+      <p class="settings-description">운동 타이머의 기본 시간을 설정하세요.</p>
+
+      <form class="settings-form" id="settings-form" action="index.html" method="get">
+        <label class="input-label" for="timer-minutes">타이머 시간</label>
+        <div class="input-wrap">
+          <input id="timer-minutes" name="minutes" type="number" min="1" max="120" value="45" required>
+          <span>분</span>
+        </div>
+        <button class="complete-button" type="submit">설정 완료 <span aria-hidden="true">→</span></button>
+      </form>
+    </section>
+
+    <p class="footer-note">꾸준함이 가장 좋은 기록입니다.</p>
+  </main>
+</body>
+</html>
